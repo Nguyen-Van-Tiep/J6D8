@@ -1,0 +1,26 @@
+<div xmlns:th="http://www.thymeleaf.org" th:replace="~{/layout/index::dynamic(~{::main})}">
+    <main>
+        <form th:action="@{/quenmk/verifycode}" method="post" class="col-sm-8 col-sm-offset-2">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Porgot Password
+                    <i class="pull-right text-danger" th:text="${message}"></i>
+                </div>
+                <div class="panel-body">
+                    <div class="form=group">
+                        <div>Username:</div>
+                        <input name="username" class="form-control">
+                    </div>
+                    <div class="form=group">
+                        <div>Email:</div>
+                        <input name="email" type="email" class="form-control">
+                    </div>
+                </div>
+                <div class="panel-footer text-center">
+                    <button class="btn btn-success text-light-center">Lấy lại mật khẩu</button>
+
+                    <button class="btn btn-success text-light-center">Đăng ký</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</div>
