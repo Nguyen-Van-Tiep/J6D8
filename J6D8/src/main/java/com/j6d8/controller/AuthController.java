@@ -20,8 +20,12 @@ public class AuthController {
         return "forward:/security/login/success";
     }
 
-    @GetMapping("/tesst")
+    @GetMapping("/test")
     public String view(){
+        return "";
+    }
+    @GetMapping("/tesst")
+    public String view1(){
         return "";
     }
 }
